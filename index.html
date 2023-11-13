@@ -40,93 +40,144 @@
   <!-- Link Icon -->
   <link rel="icon" href="https://www.iconninja.com/files/4/936/948/black-apple-icon.png">
 
+<script src="/main.js"></script>
+
 </head>
 
 <body>
-    <header>
-        <nav>
+  <!-- Header -->
+  <header class="header">
+    <nav class="header__nav">
+      <div class="header__nav__logo">
+        <img src="/imagenes/Logo.svg" alt="Logo principal">
+      </div>
+      <ul class="header__nav__list">
+        <li>
+          <a href="/">Inicio</a>
+        </li>
+        <li>
+          <a href="/Servicios.html">Servicios</a>
+        </li>
+        <li>Sobre Nosotros</li>
+      </ul>
+        <button class="boton">
+          Contáctanos
+        </button>
+      </a>
+    </nav>
+  </header>
 
-        <img src="/imagenes/Logo.svg" alt="Logo Empresa">
-            <ul>
-                <li>
-                  <a href="/">Inicio</a>
-                </li>
-                <li>
-                  <a href="/Servicios.html">Servicios</a>
-                </li>
-                <li>Sobre Nosotros</li>
-            </ul>
-                <button>Contáctanos</button>
-        </nav>
-    </header>    
-<main>
-<section>
-    
-    <h1>Jumbotron de la Pagina Principal</h1>
-    <p class="parrafo right">La calidad de tu vida depende de la calidad de tus pensamientos</p>
+  <!-- Jumbotron -->
+    <div class="jumbotron">
+      <div class="jumboton__container">
+        <h1 class="jumboton__container__title">Jumbotron de la Página Principal</h1>
+        <p class="jumboton__container__param">La calidad de tu vida depende de la calidad de tus pensamientos</p>
+      </div>
+      <button class="boton">
+        Únete a Nosotros
+      </button>
+    </div>
 
-    <button>Unete a Nosotros</button>
-
-</section>
-<section>
-    <img src="/imagenes/istockphoto-1444674627-1024x1024 1.png" alt="Imagen1 ">
+  <!-- Galería de Fotos -->
+<div class="galery">
+  <div class="galery__item1">
+    <img src="/imagenes/istockphoto-1444674627-1024x1024 1.png" alt="Imagen1">
+  </div>
+  <div class="galery__item2">
     <img src="/imagenes/istockphoto-1424987910-1024x1024 1.png" alt="Imagen2">
+  </div>
+  <div class="galery__item3">
     <img src="/imagenes/people-1979261_1280 1.png" alt="Imagen3">
-</section>
+  </div>
+</div>
 
-<section>
-    <h2>Comprometidos con el desarrollo de nuevos profesionales</h2>
+<!-- Contenido de la Página -->
+<main class="main">
+
+  <section class="section left">
+    <h3>Comprometidos con el desarrollo de nuevos profesionales</h3>
     <p>Los textos informativos son aquellos que buscan comunicar hechos sobre la realidad de la manera más objetiva posible, es decir, sin incluir opiniones, 
-    emociones o deseos de su emisor.</p>
+      emociones o deseos de su emisor.</p>
+  </section>
 
-    <h2>Hecha un vistazo a lo que tenemos que ofrecerte</h2>
+  <section class="section right">
+    <h3>Hecha un vistazo a lo que tenemos para ofrecerte</h3>
     <p>Les informamos a los clientes que el local permanecerá cerrado el próximo lunes 12 de octubre, por motivo del feriado nacional.
-  Muchísimas gracias.</p>
-</section>
+      Muchísimas gracias.</p>
+  </section>
 
-<section>
+ <!-- Galeria 2 -->
+ 
+ <div class="image-container">
+  <div class="grid">
+    <div class="images1">
+    <img src="/imagenes/student-849826_640 1.png" alt="Imagen4">
+    </div>
+    <div class="images2">
+    <img src="/imagenes/istockphoto-1500285927-1024x1024 1.png" alt="Imagen5">
+    </div>
+    <div class="images3">
+    <img src="/imagenes/student-849824_640 1.png" alt="Imagen 6">
+    </div>
+    <div class="images4">
+    <img src="/imagenes/laptop-2557468_640 1.png" alt="Imagen7">
+    </div>
+  </div>
+</div>
 
-  <img src="/imagenes/student-849826_640 1.png" alt="Imagen4">
-  <img src="/imagenes/istockphoto-1500285927-1024x1024 1.png" alt="Imagen5">
-  <img src="/imagenes/student-849824_640 1.png" alt="Imagen6">
-  <img src="/imagenes/laptop-2557468_640 1.png" alt="Imagen7">
-
-</section>
-
-<section>
-<h2>Unete a Nosotros</h2>
-
-<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-
-<form action="/">
-    <input type="email" name="myemail">
-    <input type="password" name="passwd" required>
+<section class="section left">
+  <h3>Únete a nosotros</h3>
+  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
   
-    <button>Enviar</button>
-</form>
-
+   <!-- Formulario de Registro -->
+   <form action="/" method="post" id="form">
+    <div class="form">
+      <input type="email" name="myemail" placeholder="Ingresa tu @email">
+      <input type="password" name="passwd" placeholder="Password" required>
+      <input type="submit" value="Enviar solicitud" class="boton"></input>
+    </div>
+  </form>
 </section>
-
 
 </main>
-<footer>
 
-  <img src="/imagenes/Logo.svg" alt="Logo footer">
-  <p>Realizado en Instituto ALFA Corporation</p>
-
-<nav>
-  <p>Inicio</p>
-  <p>Servicios</p>
-  <p>Sobre Nosotros</p>
-</nav>
-
-    <img src="/imagenes/cvglin 1.svg" alt="">
-    <img src="/imagenes/cvglin 2.svg" alt="">
-    <img src="/imagenes/cvglin 3.svg" alt="">
-    <img src="/imagenes/cvglin 4.svg" alt="">
-    <img src="/imagenes/intagran.png" alt="">
-    <img src="/imagenes/whatasaap 1.svg" alt="">
+ <!-- Footer de la pagina -->
+ <footer class="footer">
+  <div class="footer__container">
+    <div class="footer__container__logo">
+      <img src="/imagenes/Logo.svg" alt="Logo Footer">
+      <p>Realizado en Instituto ALFA Corporation</p>
+    </div>
+    <ul class="footer__container__list">
+      <li>
+        <a href="/">Inicio</a>
+      </li>
+      <li>
+       <a href="/Servicios.html">Servicios</a>
+      </li>
+      <li>Sobre Nosotros</li>
+    </ul>
+    <div class="footer__container__social-list">
+      <div class="footer__container__social-list__item">
+        <img src="/imagenes/cvglin 1.svg" alt="">
+      </div>
+      <div class="footer__container__social-list__item">
+        <img src="/imagenes/cvglin 2.svg" alt="">
+      </div>
+      <div class="footer__container__social-list__item">
+        <img src="/imagenes/cvglin 3.svg" alt="">
+      </div>
+      <div class="footer__container__social-list__item">
+        <img src="/imagenes/cvglin 4.svg" alt="">
+      </div>
+      <div class="footer__container__social-list__item">
+        <img src="/imagenes/intagran.png" alt="">
+      </div>
+      <div class="footer__container__social-list__item">
+        <img src="/imagenes/whatasaap 1.svg" alt="">
+      </div>
+    </div>
+  </div>
 </footer>
-
 </body>
 </html>

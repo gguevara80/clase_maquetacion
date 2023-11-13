@@ -1,21 +1,215 @@
-*{
-    font-family: 'Roboto Mono', monospace; 
-    color: #1e1e1e;
-    list-style: none;
+* {
+    font-family: 'Roboto Mono', monospace;
     text-decoration: none;
+    list-style: none;
     border: none;
     outline: none;
-    padding: none;
-    margin: none; 
-    box-sizing: border-box; 
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+/* Body */
+}
+body {
+    background-color: #260707;
+    color: #ffffff; 
 }
 
-p{
-    visibility: visible;
-/*    opacity: 0.5;*/
-    display: block;
-    width: 400px;
-    height: 400px;
-    padding: 40px;
+/* Header */
+header.header {
+    padding: 0 2.6em;
+  }
+  nav.header__nav {
+    display: flex;
+    align-items: center;
+    height: var(--HeightDefined);
+    justify-content: space-between;
+    max-width: var(--MaxWidth);
+    margin: 0 auto;
+  }
+  
+  .header__nav__logo {
+    height: 100%;
+    padding: 1em;
+  }
+  
+  ul.header__nav__list {
+    list-style: none;
+    display: flex;
+    height: 100%;
+    align-items: center;
+    gap: 1.6em;
+  }
+  ul.header__nav__list li {
+    font-size: 1.2em;
+  }
+
+/* jumbotron y titulo */
+
+ .jumbotron {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 6em auto;
+    gap: 2em;
+  }
+  h1.jumboton__container__title {
+    font-size: 4em;
+    text-align: center;
+  }
+  p.jumboton__container__param {
+    text-align: center;
+  }
+
+ /*galeria */
+ 
+ .galery {
+  padding: 0 2.6em;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  width: 100%;
+  max-width: var(--MaxWidth);
+  margin: 0 auto;
 }
 
+.galery img {
+  border-radius: 2em;
+  padding: 1em;
+  max-width: 100%;
+  height: auto;
+}
+
+  /* Main */
+  main.main {
+    padding: 0 2.6em;
+    max-width: var(--MaxWidth);
+    margin: 0 auto;
+  }
+  
+  section.section {
+    display: flex;
+    flex-direction: column;
+    margin: 5em auto;
+  }
+  section.section h3 {
+    font-size: 2em;
+    width: 70%;
+  }
+  section.section p {
+    opacity: .8;
+    width: 90%;
+  }
+  section.section.left {
+    align-items: flex-start;
+  }
+  section.section.left h3,
+  section.section.left p {
+    text-align: left;
+  }
+  section.section.right {
+    align-items: flex-end;
+  }
+  section.section.right h3,
+  section.section.right p {
+    text-align: right;
+  }
+
+/* Galeria 2 */
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100vh;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); 
+  grid-template-rows: repeat(2, 1fr); 
+  gap: 5px; ;
+}
+
+.grid img {
+  border-radius: 2em;
+  padding: 1em;
+  max-width: 100%;
+  height: auto;
+}
+
+.grid div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/*Formulario */
+  .form {
+    margin: 2em auto;
+   }
+   .form__input {
+     border: 1px var(--ColorLight) solid;
+     padding: .6em 1.2em;
+     border-radius: 10px;
+     background-color: var(--ColorLight);
+     color: var(--ColorBlack);
+     width: 30em;
+     
+   }
+
+/* Footer*/
+    footer.footer {
+    background-color: #2B2D42;
+    padding: 2em;
+  }
+  
+  .footer__container {
+    max-width: var(--MaxWidth);
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+  }
+  .footer__container__logo {
+    width: 20%;
+  }
+  .footer__container__logo img {
+    width: auto;
+    height: var(--HeightDefined);
+  }
+  .footer__container__logo p {
+    opacity: .8;
+  }
+  
+  ul.footer__container__list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1.6em;
+    flex-wrap: wrap;
+  }
+  ul.footer__container__list li {
+    font-size: 1.2em;
+  }
+  .footer__container__social-list {
+    display: grid;
+    width: 20vw;
+    grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+    grid-auto-rows: calc(var(--HeightDefined) - 3vh);
+  }
+  .footer__container__social-list__item {
+    width: 100%;
+    height: 100%;
+    padding: .5em;
+  }
+/* Botones */
+.boton {
+    background-color: #484FD9;
+    color: #ffffff; 
+    border: 1px var(--ColorLight) solid;
+    padding: .6em 1.2em;
+    border-radius: 10px;
+}
